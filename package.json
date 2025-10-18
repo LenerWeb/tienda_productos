@@ -1,6 +1,7 @@
 {
   "name": "y",
   "version": "1.0.0",
+  "type": "module",
   "description": "backend para tienda de productos",
   "main": "n",
   "scripts": {
