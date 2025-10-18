@@ -5,6 +5,8 @@ import { pool } from "./config/db.js";
 
 
 // import routes
+import productosRoutes from "./routes/productos.js"
+
 
 dotenv.config();
 const app = express();
@@ -12,6 +14,8 @@ app.use(cors());
 app.use(express.json());
 
 // rutas
+app.use("/api/productos", productosRoutes)
+
 
 // prueba de conexion a la base de datos
 app.get("/api/test-db", async (req, res) =>{
